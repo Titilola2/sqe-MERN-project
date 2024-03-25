@@ -50,8 +50,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.form-sec{
+.from-sec{
     display: flex;
+    flex-direction: column;
 
 }
 .signup-section img{

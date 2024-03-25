@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 app.use(express.json());
 app.use(cors())
 
-MONGO_URI = 'mongodb://localhost:27017/student_registration?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false'
+MONGO_URI = 'mongodb+srv://Titilola:Titilola@cluster0.enwnj61.mongodb.net/mongo?retryWrites=true&w=majority'
 
 mongoose.connect(MONGO_URI,()=>{
     console.log('Connected to database successfully');

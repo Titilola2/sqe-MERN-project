@@ -5,7 +5,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import {useNavigate} from 'react-router-dom'
 
-import logo from './gb.png';
+import logo from './gb.svg';
 import { Context } from '../../Context/Context';
 const Login = () => {
 
@@ -43,11 +43,18 @@ const Login = () => {
                 <div className="img">
                     <img src={logo} alt=""/>
                 </div>
-                    <h2>Karakorum International University, <br/>Gilgit Baltistan</h2>
+                    <h2> Group 2</h2>
             </div>
             <div className="login-section">
-                <img src={logo} alt=""/>
-                <h2>LOGIN</h2>
+               <div className="loginheader">
+               <img src={logo} alt="" />
+               <h4> 
+                    <p>C o l l e g e</p>
+                </h4>
+                
+                </div> 
+                <h6>Welcome to Interswitch College</h6>
+                <p>Login to access portal</p>
                 <form>
                     <input  type="text" placeholder="Name or Email" ref={emailRef}/>
                     <input type="password" placeholder="Password" ref={passRef}/>

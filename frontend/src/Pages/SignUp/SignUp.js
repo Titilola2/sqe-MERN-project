@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { Link,useNavigate } from 'react-router-dom'
 import './signup.css';
-import logo from './gb.png'
+import logo from './gb.svg'
 import axios from 'axios'
 import { toast } from 'react-toastify';
 
@@ -52,28 +52,36 @@ const SignUp = () => {
                     <img src={logo} alt="" />
 
                     </div>
-                    <h2>Karakorum International University</h2>
+                    <h2></h2>
                 </div>
             </div>
             <div className="sign-main-log">
                 <div className="signup-section">
                     <div className="sign-section">
                         <img src={logo} alt=""/>
-                        <h2>Student Registration Form</h2>
+                        <h4> 
+                    <p>C o l l e g e</p>
+                </h4>
+                <h6>Welcome to Interswitch College</h6>
+                <p>Register as a student</p>
+                       
                     </div>
                     <div className="from-sec">
                         <form onSubmit={handleSubmit}>
                             <input type="text" placeholder="Name" ref={nameRef}/>
+                            <br/>
+                            <input type="text" placeholder='Registration number' ref={regRef}/>
+                            <br/> 
                             <input type="email" placeholder="Email" ref={emailRef}/>
                             <br/>
                             <input type="text" placeholder="Phone Number" ref={phoneRef}/>
-                            <input type="text" placeholder='Registration number' ref={regRef}/>
-                            <br/> 
+                           
                             <input type="password" placeholder="Password" ref={passRef}/>
+                            <br/>
                             <input type="password" placeholder="Retype Password"/>
                             <br/>
 
-                            <textarea placeholder='Enter Your Address' ref={addRef}></textarea>
+                            
                             <div className="sign-sec">
                                 <input type="submit" value="SIGNUP"/>
                             </div>

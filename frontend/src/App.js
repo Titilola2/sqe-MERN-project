@@ -6,13 +6,40 @@ import Login from '../src/Pages/Login/Login'
 import Signup from '../src/Pages/SignUp/SignUp'
 import {ToastContainer,toast} from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function App() {
 
+  /* const [data, setData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from the backend
+    fetch('/api/data')
+      .then((response) => response.json())
+      .then((data) => {
+        setData(data);
+      });
+  }, []);
+
+ return (
+    <div>
+      <h1>Data from the Backend:</h1>
+      <ul>
+        {data.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+  */
+
+
+
     
   return (
+
+
 
     <BrowserRouter>
     <div className="App">
